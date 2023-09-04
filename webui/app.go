@@ -7,10 +7,13 @@ date = float32(time.Now().
 
 
 import (
-	"fmt",
-	"net/http",
-	"http"
+	"fmt"
+	"io/ioutil"
+	"net/http"
+	"html/template"
+	"os"
 )
+
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Привет, мир!")
